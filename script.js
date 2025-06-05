@@ -47,7 +47,7 @@ async function carregarDados() {
       botao.href = `https://wa.me/5599999999999?text=Olá! Tenho interesse 
       no curso: ${encodeURIComponent(nomeCurso)}`;
       botao.target = '_blank';
-      botao.className = 'mt-4 inline-block bg-green-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-600';
+      botao.className = 'mt-4 inline-block bg-red-500 text-white font-semibold py-2 px-4 rounded hover:bg-green-600';
       botao.textContent = '📲 Comprar';
 
       curso.appendChild(botao);
