@@ -1,0 +1,53 @@
+body {
+  background-color: #e0f2fe; /* azul claro */
+}
+h1 {
+  color: #1f2937;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#timer {
+  animation: pulse 1s infinite;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+#cursos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  #cursos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #cursos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#cursos > div {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+#cursos > div:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    color: #3b82f6;
+    font-weight: 600;
+  }
+  50% {
+    color: #1d4ed8;
+    font-weight: 700;
+  }
+}
